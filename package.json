@@ -1,0 +1,22 @@
+{
+  "name": "travis-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "jshint test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1xiyu/travis-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1xiyu/travis-test/issues"
+  },
+  "homepage": "https://github.com/1xiyu/travis-test#readme",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}
