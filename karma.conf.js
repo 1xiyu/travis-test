@@ -1,6 +1,8 @@
 // Karma configuration
-// Generated on Sat May 26 2018 20:51:21 GMT+0800 (CST)
-
+// // Generated on Sat May 26 2018 20:51:21 GMT+0800 (CST)
+// if (process.env.TRAVIS) {
+//      configuration.browsers = ['PhantomJS'];
+// }
 module.exports = function(config) {
   config.set({
 
@@ -17,6 +19,10 @@ module.exports = function(config) {
     files: [
       '*.js'
     ],
+
+ //    plugins: [
+ //      require('karma-phantomjs-launcher'),
+	// ],
 
 
     // list of files / patterns to exclude
