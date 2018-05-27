@@ -20,10 +20,6 @@ module.exports = function(config) {
       '*.js'
     ],
 
- //    plugins: [
- //      require('karma-phantomjs-launcher'),
-	// ],
-
 
     // list of files / patterns to exclude
     exclude: [
@@ -61,7 +57,15 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+  	browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'],
+
+    // you can define custom flags
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox']
+      }
+    },
 
 
     // Continuous Integration mode
