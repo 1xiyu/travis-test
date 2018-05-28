@@ -9,3 +9,5 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
 install: travis_wait npm install
+scirpt: node_modules/karma/bin/karma start karma.conf.js --single-run
+
